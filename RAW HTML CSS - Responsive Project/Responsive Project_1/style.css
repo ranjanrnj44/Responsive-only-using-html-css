@@ -1,0 +1,671 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+body{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+/*HOME PAGE START*/
+
+header{
+    background-color: #005000;
+    display: inline-block;
+    width: 100%;
+    color: whitesmoke;
+}
+.header_icon{
+    float: left;
+    margin-left: 200px;
+    animation-name: header_icon_part;
+    animation-duration: 3s;
+    color: whitesmoke;
+}
+@keyframes header_icon_part{
+    from{margin-left: 0px}
+    to{margin-left: 200px}
+}
+.header_text{
+    float: right;
+    font-weight: bold;
+    font-size: 35px;
+    margin-right: 200px;
+    margin-top: 10px;
+    animation-name: header_text_part;
+    animation-duration: 3s;
+}
+@keyframes header_text_part{
+    from{margin-right: 0px}
+    to{margin-right: 200px}
+}
+
+
+/**/
+nav{
+    background-color: whitesmoke;
+    display: inline-block;
+    width: 100%;
+    margin-top: -3.8px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 12px 10px;
+    color: #005000;
+    transition: 0.5s;
+}
+nav ul #push_right{
+    float: right;
+}
+nav ul li a:hover{
+    background-color: rgb(184, 184, 184);
+    color: #005000;
+}
+
+/**/
+.showcase{
+    margin-top: -4px;
+    height: 400px;
+    background-image: url("https://res.cloudinary.com/webcraze-jan/image/upload/v1533882680/adult-apple-device-business-839465.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.showcase h1{
+    font-weight: bold;
+    font-size: 45px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    color: whitesmoke;
+    position: relative;
+    top: 110px;
+}
+
+
+/**/
+.subscribe{
+    height: 80px;
+    background-color: rgb(211, 211, 211);
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+.subscribe input[type="text"]{
+    width: 30%;
+    height: 70%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 3px solid green;
+    position: relative;
+    top: 12px;
+}
+.subscribe input[type="text"]::placeholder{
+    text-align: center;
+}
+.subscribe button[type="button"]{
+    width: 10%;
+    height: 70%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 3px solid green;
+    background-color: #005000;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: 0.5s linear;
+    cursor: pointer;
+    position: relative;
+    top: 12px;
+}
+.subscribe button[type="button"]:hover{
+    background-color: black;
+}
+
+
+/**/
+.content{
+    height: 300px;
+    display: inline-block;
+    width: 100%;
+}
+img{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 30px;
+    object-fit: cover;
+}
+#content_text{
+    float: left;
+    width: 50%;
+    padding: 30px;
+    text-align: justify;
+}
+.content::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.content #content_text h3{
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.content #content_text ul{
+    font-size: 20px;
+    margin: 0px auto;
+}
+
+
+/**/
+.first_hr{
+    border: 0;
+    height: 1px;
+    background: #333;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,hsla(0,0%,0%,0)), color-stop(50%,hsla(0,0%,0%,.75)), color-stop(100%,hsla(0,0%,0%,0)));
+    background: -webkit-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background: -moz-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background: -ms-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background: -o-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background: linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+}
+
+
+/**/
+.we_deliver{
+    height: 700px;
+    text-align: center;
+    padding-top: 20px;
+}
+.we_deliver h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #005000;
+}
+.we_deliver .fab{
+    color: #005000;
+    padding: 65px;
+    transition: transform 0.9s;
+    transition-delay: 1s;
+}
+.we_deliver .fab:hover{
+    transform: rotate(360deg);
+}
+
+/**/
+.course{
+    padding-top: 30px;
+    text-align: center;
+    height: 580px;
+}
+.course h2{
+    font-size: 29px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333333;
+    font-weight: normal;
+    max-width: 900px;
+    width: 100%;
+    margin: 0px auto;
+}
+.course h3{
+    font-size: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333333;
+    font-weight: normal;
+    max-width: 900px;
+    width: 100%;
+    margin: 0px auto;
+}
+.course button{
+    position: relative;
+    top: 40px;
+}
+.course button[type="button"]{
+    padding: 7px;
+    font-size: 40px;
+    background-image: linear-gradient(to bottom, rgb(240, 210, 154), rgb(236, 173, 55));
+    border-radius: 10px;
+    width: 700px;
+    height: 70px;
+    margin: 0px auto;
+    border: 1px solid orange;
+    color: black;
+}
+.course button[type="button"]:hover{
+    background-image: linear-gradient(to bottom, rgb(240, 210, 154), orange);
+}
+
+/*HOME PAGE END*/
+
+
+
+/*ABOUT PAGE START*/
+
+/**/
+.about_org{
+    width: 80%;
+    height: 300px;
+    margin: 0px auto;
+}
+.about_org h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.about_org p{
+    color: #005000;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+
+/**/
+.people-review{
+    text-align: center;
+    height: 330px;
+}
+#card-container{
+    max-width: 320px;
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+}
+#card-container img{
+    width: 100%;
+    padding: 0px;
+}
+#card-container #card-text{
+    padding: 15px;
+    background-color: #005000;
+    color: whitesmoke;
+}
+
+
+
+/**/
+.curriculum_content{
+    width: 80%;
+    height: 400px;
+    margin: 0px auto;
+}
+.curriculum_content h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.curriculum_content p{
+    color: #005000;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 30px;
+}
+/*ABOUT PAGE END*/
+
+
+
+
+/*CONTACT PAGE START*/
+.feedback_content{
+    height: 400px;
+    margin: 17.5px;
+    background-color:#dddddd;
+    border-radius: 30px;
+}
+.feedback_content h2{
+    text-align: center;
+    padding: 10px;
+}
+#feedback_container{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+#feedback_container #tf{
+    width: 20%;
+    float: left;
+}
+#feedback_container #sf{
+    width: 80%;
+    float: right;
+    padding: 3px 0px;
+}
+#feedback_container{
+    content: " ";
+    display: table;
+    clear: both;
+}
+#tf{
+    margin-top: 15px;
+}
+#sf input[type="text"] , #sf input[type="number"] ,
+#sf input[type="email"]{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+#sf input[type="submit"]{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #005000;
+    background-color: #005000;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#sf input[type="submit"]:hover{
+    background-color: black;
+}
+textarea{
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    border: 2px solid black;  
+}
+/*CONTACT PAGE END*/
+
+
+/**/
+footer{
+    background-color: #005000;
+    width: 100%;
+}
+footer p{
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*MEDIA QUERIES START*/
+
+/*TABLET VIEW 769px to 991px */
+
+/*index start*/
+@media only screen and (min-width:769px) and (max-width:991px){
+    .header_icon{
+        float: left;
+        margin-left: 80px;
+        animation-name: header_icon_part;
+        animation-duration: 3s;
+        color: whitesmoke;
+    }
+    @keyframes header_icon_part{
+        from{margin-left: 0px}
+        to{margin-left: 80px}
+    }
+    .header_text{
+        float: right;
+        font-weight: bold;
+        font-size: 35px;
+        margin-right: 80px;
+        margin-top: 10px;
+        animation-name: header_text_part;
+        animation-duration: 3s;
+    }
+    @keyframes header_text_part{
+        from{margin-right: 0px}
+        to{margin-right: 80px}
+    }
+
+
+    .we_deliver{
+        height: 600px;
+    }
+    .we_deliver .fab{
+        color: #005000;
+        padding: 40px;
+        transition: transform 0.9s;
+        transition-delay: 1s;
+    }
+    .we_deliver .fab:hover{
+        transform: rotate(360deg);
+    }
+
+    .course h2{
+        font-size: 25px;
+        padding: 20px;
+    }
+    .course h3{
+        font-size: 20px;
+        padding: 20px;
+    }
+    /*index end*/
+
+
+    /*about start*/
+    .about_org h1{
+        text-align: center;
+    }
+    .about_org p{
+        font-size: 16px;
+    }
+    #card-container{
+        max-width: 270px;
+    }
+    .people-review{
+        text-align: center;
+        height: 500px;
+    }
+    .curriculum_content p{
+        font-size: 16px;
+    }
+    /*about end*/
+
+}
+
+/*TABLET VIEW 769px to 991px */
+
+
+/*MOBILE VIEW 400px but actual ratio is 480 to 768px */
+
+@media only screen and (min-width:400px) and (max-width:768px){
+    .header_icon{
+        float: left;
+        margin-left: 70px;
+        animation-name: header_icon_part;
+        animation-duration: 3s;
+        color: whitesmoke;
+    }
+    @keyframes header_icon_part{
+        from{margin-left: 0px}
+        to{margin-left: 70px}
+    }
+    .header_text{
+        float: right;
+        font-weight: bold;
+        font-size: 35px;
+        margin-right: 70px;
+        margin-top: 10px;
+        animation-name: header_text_part;
+        animation-duration: 3s;
+    }
+    @keyframes header_text_part{
+        from{margin-right: 0px}
+        to{margin-right: 70px}
+    }
+
+    .subscribe{
+        height: 140px;
+        background-color: rgb(211, 211, 211);
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+    }
+    .subscribe button{
+        margin-top: 10px;
+    }
+    .subscribe input[type="text"]{
+        width: 100%;
+        height: 40%;
+        border: 2px solid #005000;
+        border-radius: 0px;
+    }
+    .subscribe button[type="button"]{
+        width: 100%;
+        height: 40%;
+        border: 2px solid #005000;
+        border-radius: 0px;
+        color: whitesmoke;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        top: 12px;
+    }
+
+    
+    .content{
+        height: 300px;
+        display: block;
+        width: 100%;
+    }
+    img{
+        display: none;
+    }
+    #content_text{
+        width: 100%;
+        padding: 30px;
+        position: relative;
+        left: 60px;        
+    }
+
+
+    .we_deliver{
+        height: 680px;
+    }
+    .we_deliver .fab{
+        color: #005000;
+        padding: 20px;
+        transition: transform 0.9s;
+        transition-delay: 1s;
+    }
+    .we_deliver .fab:hover{
+        transform: rotate(360deg);
+    }
+
+
+    .course h3{
+        font-size: 18px;
+    }
+    .course button[type="button"]{
+        font-size: 40px;
+        background-image: linear-gradient(to bottom, rgb(240, 210, 154), rgb(236, 173, 55));
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+        height: 70px;
+        margin: 0px auto;
+        border: 1px solid orange;
+        color: black;
+    }
+    /*index end*/
+
+
+    /*about start*/
+    .about_org{
+        width: 80%;
+        height: 430px;
+        margin: 0px auto;
+    }
+    .about_org h1{
+        text-align: center;
+    }
+    .about_org p{
+        font-size: 16px;
+    }
+    #card-container{
+        max-width: 270px;
+    }
+    .people-review{
+        text-align: center;
+        height: 500px;
+    }
+    .curriculum_content p{
+        font-size: 16px;
+    }
+
+    .people-review{
+        text-align: center;
+        height: 900px;
+    }
+    #card-container{
+        max-width: 320px;
+        margin: auto;
+    }
+    #card-container img{
+        display: block;
+        width: 100%;
+        padding: 0px;
+    }
+    #card-container #card-text{
+        padding: 15px;
+        background-color: #005000;
+        color: whitesmoke;
+    }
+    .curriculum_content{
+        height: 550px;
+    }
+    .curriculum_content h2{
+        text-align: center;
+    }
+    .curriculum_content p{
+        font-size: 16px;
+    }
+
+    /*about end*/
+
+
+    /*contact start*/
+    .feedback_content{
+        height: 700px;
+        margin: 17.5px;
+        background-color:#dddddd;
+        border-radius: 30px;
+    }
+    #feedback_container #tf{
+        width: 100%;
+    }
+    #feedback_container #sf{
+        width: 100%;
+    }
+    #sf input[type="text"] , #sf input[type="number"] ,
+    #sf input[type="email"]{
+    height: 50px;
+    }
+    #sf input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    }
+    /*contact end*/
+
+
+}
+/*MOBILE VIEW 400px but actual ratio is 480 to 768px */
+
+/*MEDIA QUERIES END*/
